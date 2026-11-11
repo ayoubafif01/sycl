@@ -1,0 +1,20 @@
+warning: CUDA version 12.8 is only partially supported [-Wunknown-cuda-version]
+/home/afif/proj/polybenchGpu/CUDA/GEMM_reg/gemm.cu:161:2: warning: DPCT1049:0: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.
+  161 |         gemm_kernel<<< grid, block >>>(ni, nj, nk, alpha, beta, A_gpu, B_gpu, C_gpu);
+      |         ^
+/home/afif/proj/polybenchGpu/CUDA/GEMM_reg/gemm.cu:119:2: warning: DPCT1093:1: The "0" device may be not the one intended for use. Adjust the selected device if needed.
+  119 |         cudaSetDevice( GPU_DEVICE );
+      |         ^
+File '/home/afif/proj/sycl/gemm_reg/CUDA/GEMM_reg/gemm.dp.hpp' already exists; skipping it.
+File '/home/afif/proj/sycl/gemm_reg/common/polybench.c' already exists; skipping it.
+File '/home/afif/proj/sycl/gemm_reg/common/polybench.h' already exists; skipping it.
+File '/home/afif/proj/sycl/gemm_reg/common/polybenchUtilFuncts.h' already exists; skipping it.
+
+NOTE: Could not auto-detect compilation database for file 'gemm.cu' in '/home/afif/proj/polybenchGpu/CUDA/GEMM_reg' or any parent directory.
+Parsing: /home/afif/proj/polybenchGpu/CUDA/GEMM_reg/gemm.cu
+Analyzing: /home/afif/proj/polybenchGpu/CUDA/GEMM_reg/gemm.cu
+Migrating: /home/afif/proj/polybenchGpu/CUDA/GEMM_reg/gemm.cu
+Processed 1 file(s) in -in-root folder "/home/afif/proj/polybenchGpu"
+
+See Diagnostics Reference to resolve warnings and complete the migration:
+https://oneapi-src.github.io/SYCLomatic/dev_guide/reference/diagnostics-reference.html
